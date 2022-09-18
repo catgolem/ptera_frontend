@@ -3,10 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-{/*
-  デザイン
-*/}
-
 const Home:NextPage = () => {
   return (
     <div>
@@ -52,3 +48,8 @@ const InputButton = styled.button`
     text-decoration: none;
   }
 `
+
+{/*
+  Linkの2つをAzureのページに飛ぶようにする
+  デザイン
+*/}
