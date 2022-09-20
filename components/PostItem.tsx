@@ -35,21 +35,22 @@ mapのときの並べるための番号どうする？
 
   ]
 
-{postItem.thought}
-{postItem.point}
-{postItem.url}
-{postItem.work}
+  url
+    リンクに飛べるように
+
+
+#f4c530,#f39abb,#e73245,#4169e2,#00a692
 */}
 
 const PostItem = () => {
   return(
-  <PostVisual>
+  <div>
     {POSTS.map((post) =>{
       return(
-        <div key={post.number}>
+        <PostVisual key={post.number}>
       
           <Work>
-            {post.work}
+            「{post.work}」
           </Work>
           <Thought>
             {post.thought}
@@ -60,30 +61,38 @@ const PostItem = () => {
           <Point>
             {post.point}
           </Point>
-        </div>
+        </PostVisual>
       )
     })}
-  </PostVisual>
+  </div>
   )}
 
 export default PostItem
 
 const PostVisual = styled.div`
-  
+  margin: 0.5em;
+  padding: 0.5em;
+  width: auto;
+  background-color: #fff0c3;
 `
 
 const Work = styled.div`
-  
+  font-weight: bold;
 `
 
 const Thought = styled.div`
-  
+  border:1px solid #4169e2;
+  padding-left: 5px;
+  height: 100px;
 `
 
 const URL = styled.div`
-  
+  margin: 8px;
 `
 
 const Point = styled.div`
-  
+  border: 1px solid #00a692;
+  width: 5vw;
+  text-align: center;
+  background-color: white;
 `

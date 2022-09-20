@@ -19,6 +19,14 @@ BG
 
 モーダル
 定義して  API
+
+#f78404
+#f0daa1
+#ee7804
+#fb9d14
+#f1d55f
+
+#f4c530,#f39abb,#e73245,#4169e2,#00a692
 */}
 
 type postdata = {
@@ -77,11 +85,17 @@ const User:NextPage = () => {
 }
 
 const Center = styled.div`
-  background-color: white;
+  background-color:#f4c530;
+  width: 70vw; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
 `
 
 const BG = styled.div`
-  background-color: orange;
+  background-color: #e73245;
+  min-height: 100vh;
 
 `
 
@@ -90,7 +104,7 @@ const ModalButton = styled.div`
 `
 
 const Full = styled.div`
-  
+
 `
 
 export default User
