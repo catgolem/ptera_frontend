@@ -54,4 +54,6 @@ const InputButton = styled.button`
 {/*
   Linkの2つをAzureのページに飛ぶようにする
   デザイン
+
+  ボタンを複数個つくってアカウントのログインの仕方を選べるようにする
 */}
