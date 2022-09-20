@@ -18,7 +18,7 @@ const Home:NextPage = () => {
       </div>
       <div>
         <InputButton>
-          <Link href="/Login">
+          <Link href="/.auth/login/github">
             <a>
               ログインする
             </a>
