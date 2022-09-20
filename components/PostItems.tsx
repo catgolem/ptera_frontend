@@ -42,7 +42,7 @@ mapのときの並べるための番号どうする？
 #f4c530,#f39abb,#e73245,#4169e2,#00a692
 */}
 
-const PostItem = () => {
+const PostItems = () => {
   return(
   <div>
     {POSTS.map((post) =>{
@@ -67,7 +67,7 @@ const PostItem = () => {
   </div>
   )}
 
-export default PostItem
+export default PostItems
 
 const PostVisual = styled.div`
   margin: 0.5em;

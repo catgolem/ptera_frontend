@@ -1,7 +1,8 @@
 import { NextPage } from 'next'
 import React from 'react'
 import styled from 'styled-components'
-import PostItem from '../../components/PostItem'
+import PostItems from '../../components/PostItems'
+import PostItem from '../../components/PostItems'
 
 {/*
 ヘッダー
@@ -71,7 +72,7 @@ const User:NextPage = () => {
         
         <Center>
           
-          <PostItem />
+          <PostItems />
           
         </Center>
         <ModalButton>
