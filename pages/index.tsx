@@ -13,7 +13,7 @@ const Home:NextPage = () => {
       <div>
         
         <div>
-        Welcome to ptera
+          Welcome to ptera
         </div>
       </div>
       <div>
@@ -40,6 +40,8 @@ const Home:NextPage = () => {
     </div>
   )
 }
+
+
 
 export default Home
 
