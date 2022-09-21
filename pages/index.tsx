@@ -18,7 +18,7 @@ const Home:NextPage = () => {
       </div>
       <div>
         <InputButton>
-          <Link href="/.auth/login/github">
+          <Link href="/.auth/login/google?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
             <a>
               ログインする
             </a>
@@ -56,4 +56,8 @@ const InputButton = styled.button`
   デザイン
 
   ボタンを複数個つくってアカウントのログインの仕方を選べるようにする
+  
+  Azure
+  twitter
+  github
 */}

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { POSTS } from '../pages/User'
+import { POSTS } from '../pages/user'
+
 
 {/*
 
@@ -47,18 +48,18 @@ const PostItems = () => {
   <div>
     {POSTS.map((post) =>{
       return(
-        <PostVisual key={post.number}>
+        <PostVisual className='rounded' key={post.number}>
       
           <Work>
             「{post.work}」
           </Work>
-          <Thought>
+          <Thought className='rounded'>
             {post.thought}
           </Thought>
-          <URL>
+          <URL className='rounded'>
             {post.url}
           </URL>
-          <Point>
+          <Point className='rounded'>
             {post.point}
           </Point>
         </PostVisual>
@@ -84,10 +85,11 @@ const Thought = styled.div`
   border:1px solid #4169e2;
   padding-left: 5px;
   height: 100px;
+  margin: auto 10px;
 `
 
 const URL = styled.div`
-  margin: 8px;
+  margin: 8px 10px;
 `
 
 const Point = styled.div`
@@ -95,4 +97,5 @@ const Point = styled.div`
   width: 5vw;
   text-align: center;
   background-color: white;
+  margin-left: 10px;
 `
