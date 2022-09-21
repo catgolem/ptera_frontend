@@ -43,17 +43,24 @@ type postdata = {
 export const POSTS =[
   {
     number: 1,
-    thought: 'nice',
-    point: 100,
-    url: 'https://sample',
-    work: 'frozen',
+    thought: 'hoge',
+    point: 72,
+    url: 'https://sample3',
+    work: 'fuga',
   },
   {
     number: 2,
-    thought: '感動した',
-    point: 80,
-    url: 'https://sample2',
-    work: 'ワンピース',
+    thought: '黄猿に惚れた// まさかこの私が、光の速さで惚れさせられるなんて！',
+    point: 0,
+    url: 'https://Φne-piece.com',
+    work: 'ΦNE PIECE FILM RED',
+  },
+  {
+    number: 3,
+    thought: '白石まいやん、ありがとうございました。',
+    point: 46,
+    url: '',
+    work: 'iPadを落としただけなのに',
   },
   {
     number: 3,
@@ -81,7 +88,7 @@ const User:NextPage = () => {
   }
   
   return (
-    <Full>
+    <div>
       
       <BG>
         
@@ -113,7 +120,7 @@ const User:NextPage = () => {
         
       </BG>
       
-    </Full>
+    </div>
   )
 }
 
@@ -124,12 +131,17 @@ const Center = styled.div`
   margin: 0 auto;
   padding: 24px;
   min-height: 100vh;
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.6) inset;
 `
 
 const BG = styled.div`
-  background-color: #e73245;
+  background-color: #f78404;
+  background-image:
+    radial-gradient(#fb9d14 20%, transparent 20%),
+    radial-gradient(#fb9d14 20%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
   min-height: 100vh;
-
 `
 
 const ModalButton = styled.button`
@@ -139,8 +151,8 @@ const ModalButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 5px #0023b7;
+  background-color: #f0daa1;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
   border-radius: 100px;
 `
 
@@ -151,13 +163,9 @@ const ShareButton = styled.button`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 5px #0023b7;
+  background-color: #f0daa1;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
   border-radius: 100px;
-`
-
-const Full = styled.div`
-
 `
 
 const Img = styled.img`
@@ -166,8 +174,6 @@ const Img = styled.img`
   right: 3px;
   width: 45px;
   height: 45px;
-
-
 `
 
 

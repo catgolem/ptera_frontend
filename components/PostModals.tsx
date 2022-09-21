@@ -46,13 +46,13 @@ export const PostModals = () => {
             <Img src="/close_button.svg" />
           </CancelButton>
           <WorkBox className='ml-3 mb-2 rounded'>
-            <InputForm
+            <InputForm className=''
                 name="work"
                 type="text"
               />
           </WorkBox>
           <ThoughtBox className='rounded'>
-            <InputTextarea className=''
+            <InputTextarea className='rounded -ml-1'
                 name="thought"
                 
               />
@@ -110,6 +110,7 @@ const FormVisual = styled.div`
   width: 400px;
   height: 230px;
   background-color: #fff0c3;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.6);
 `
 
 const CancelButton = styled.button`
@@ -134,15 +135,15 @@ const ThoughtBox = styled.div`
 `
 const URLBox = styled.div`
   margin: 8px 10px;
+  width: 250px;
 `
 const PointBox = styled.div`
   border: 1px solid #00a692;
-  width: 5vw;
-  height: 4vh;
+  width: 50px;
+  height: 35px;
   text-align: center;
   background-color: white;
   margin-left: 10px;
-
 `
 
 const SubmitButton = styled.button`
@@ -159,7 +160,7 @@ const Img = styled.img`
 
 const InputForm = styled.input`
   width:100%;
-  height:100%;
+  height:;
 `
 /* styled-components styledのあとの様式に注意 imgやinputなど */
 
