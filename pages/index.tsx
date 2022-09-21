@@ -7,37 +7,41 @@ const Home:NextPage = () => {
   return (
     <div>
       <Head>
-        <title>ptera </title>
-
+        <title>PTERA</title>
       </Head>
-      <div>
-        
-        <div>
-          Welcome to ptera
-        </div>
-      </div>
-      <div>
-        <InputButton>
-          <Link href="/.auth/login/google?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
-            <a>
-              ログインする
-            </a>
-          </Link>
-        </InputButton>
-
-        <InputButton>
-          <Link href="/Signup">
-            <a>
-              新規登録する
-            </a>
-          </Link>
-        </InputButton>
-      </div>
+      <Block className='p-0'>
+        <Message className='pt-10'>
+          PTERA
+        </Message>
       
+        <Icons className='pt-10'>
 
-      <footer>
-      </footer>
-    </div>
+          <InputButton>
+            <Link href="/.auth/login/google?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
+              <a>
+                <Img src="/google_icon.svg" />
+              </a>
+            </Link>
+          </InputButton>
+
+          <InputButton>
+            <Link href="/.auth/login/twitter?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
+              <a>
+                <Img src="/twitter_icon.svg" />
+              </a>
+            </Link>
+          </InputButton>
+
+          <InputButton>
+            <Link href="/.auth/login/Azure?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
+              <a>
+                <Img src="/azure_icon.svg" />
+              </a>
+            </Link>
+          </InputButton>
+        </Icons>
+      </Block>
+  </div>
   )
 }
 
@@ -45,12 +49,37 @@ const Home:NextPage = () => {
 
 export default Home
 
-const InputButton = styled.button`
-  a {
-    text-decoration: none;
-  }
+const Block = styled.div`
+  display:flex;
+  flex-flow: column;
+  
+`
+const Message = styled.div`
+  text-align: center;
+  font-size: 45px;
+  vertical-align: middle;
 `
 
+const InputButton = styled.button`
+  padding: 10px;
+
+`
+
+
+const Img = styled.img`
+  width:50px;
+
+`
+
+
+const Icons = styled.div`
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: auto;
+`
 {/*
   Linkの2つをAzureのページに飛ぶようにする
   デザイン
