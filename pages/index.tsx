@@ -33,7 +33,7 @@ const Home:NextPage = () => {
           </InputButton>
 
           <InputButton>
-            <Link href="/.auth/login/Azure?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
+            <Link href="/.auth/login/aad?post_login_redirect_uri=https://proud-field-0aee10e00.1.azurestaticapps.net/user ">
               <a>
                 <Img src="/azure_icon.svg" />
               </a>
