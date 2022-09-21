@@ -48,7 +48,7 @@ const PostItems = () => {
   <div>
     {POSTS.map((post) =>{
       return(
-        <PostVisual className='rounded' key={post.number}>
+        <PostVisual className='rounded mb-6 pt-3 pb-4 ' key={post.number}>
       
           <Work>
             「{post.work}」
@@ -71,10 +71,9 @@ const PostItems = () => {
 export default PostItems
 
 const PostVisual = styled.div`
-  margin: 0.5em;
-  padding: 0.5em;
   width: auto;
   background-color: #fff0c3;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
 `
 
 const Work = styled.div`
@@ -90,6 +89,8 @@ const Thought = styled.div`
 
 const URL = styled.div`
   margin: 8px 10px;
+  color: gray;
+  text-decoration: underline;
 `
 
 const Point = styled.div`
